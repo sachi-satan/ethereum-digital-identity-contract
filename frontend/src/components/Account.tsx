@@ -12,7 +12,7 @@ import { EditIdentityForm } from "./identity/EditIdentityForm";
 import { IdentityDisplay } from "./identity/IdentityDisplay";
 import { IdentityFormData } from "./identity/IdentityForm";
 
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
 
 export function Account() {
   const { address } = useAccount();
